@@ -44,7 +44,7 @@
           <!-- <h3>Housing Type</h3> -->
           <label class='check-container'>
               Affordable Housing Types
-              <input id='affHousing' type='checkbox' name='viz-toggle' checked='checked'>
+              <input id='affordable_housing_types' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
           <label class='check-container'>Co-Op
               <span class="legend-key" style='background:#CCC'></span>
@@ -176,6 +176,11 @@
         'url': 'mapbox://iamwfx.8thgevrt'
       });
 
+      map.addSource('affordable_housing_types',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.ab4g098q'
+      });
+
 
       map.addLayer({
         'id':'povertyLevel',
@@ -280,6 +285,31 @@
         }
       });
 
+
+      map.addLayer({
+        'id':'affordable_housing_types',
+        'type':'line',
+        'source':'hous_type',
+        'source-layer':'PLUTO_HOUS_TYPE_MASTER_Featu-7b5u7f',
+        'paint':{
+          'line-color':[
+                        'match',
+                        ['get', 'hous_type'],
+                        'coop','#ff595e',
+                        'homeless','#f924c',
+                        'hpd_sub','#ffca3a',
+                        'mob_home','#8ac926',
+                        'pub_hou','#1982c4',
+                        'sro','#6a4c93',
+                        /* other */ '#0a2344'
+                        ]
+          'line-opacity':1,
+          'line-width': 2
+        }
+      });
+
+
+
   // Explicitly set the visibility of each to be on or off.
   // There are probably easier ways to do this../
     map.setLayoutProperty('floodZones',"visibility", "visible");
@@ -292,7 +322,7 @@
     map.setLayoutProperty('f80_100',"visibility", "visible");
     map.setLayoutProperty('f80_500',"visibility", "visible");
 
-    map.setLayoutProperty('affHousing',"visibility", "visible");
+    map.setLayoutProperty('affordable_housing_types',"visibility", "visible");
 
     var layerList = document.getElementById("menu");
     var checkboxes = layerList.getElementsByTagName("input");
