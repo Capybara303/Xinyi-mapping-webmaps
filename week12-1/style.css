@@ -2,7 +2,7 @@
         body {
             margin:0;
             padding:0;
-            font-family: sans-serif;
+            font-family: "Edu AU VIC WA NT Pre", cursive;
         }
         a, a:hover, a:visited {
             color: #0071bc;
@@ -41,8 +41,8 @@
           background-image: url("images/sandy1.png");
           background-position: top;
           background-repeat: no-repeat;
-          background-size: cover;
-          height: 100vh;
+          background-size: 100vw 100vh;
+          height: 170vh;
         }
 
         #header h1, #header h2, #header p {
@@ -60,6 +60,7 @@
         #header h2{
             font-size: 3vh;
             color: white;
+            padding-bottom: 60vh;
         }
         #header p{
             font-size: 2vh;

@@ -57,6 +57,16 @@ if (config.byline) {
     bylineText.innerText = config.byline;
     header.appendChild(bylineText);
 }
+if (config.para1) {
+    var para1 = document.createElement('p');
+    para1.innerText = config.para1;
+    header.appendChild(para1);
+}
+if (config.para2) {
+    var para2 = document.createElement('p');
+    para2.innerText = config.para2;
+    header.appendChild(para2);
+}
 
 if (header.innerText.length > 0) {
     header.classList.add(config.theme);

@@ -12,6 +12,8 @@ var config = {
     title: 'Public and Afordable Hosing Flood Risk',
     subtitle: 'Where and who will be affected by the intensfying climate change?',
     byline: 'By Xinyi Ling',
+    para1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet tincidunt nisi, a eleifend lectus semper imperdiet. In placerat diam dictum velit lacinia, sed ultricies lacus interdum. Nulla ac tincidunt mauris. In at nibh non dolor lacinia ornare. Mauris ultricies vel neque eu suscipit. Aenean at libero a velit dignissim tempus at sodales mi. Nullam sed pellentesque lorem. Sed ornare, dolor non fringilla ullamcorper, ante massa efficitur ante, eu efficitur orci velit sed nulla. Nulla non nibh eu arcu sodales lobortis. Duis consectetur ligula dolor, at dictum turpis iaculis a. Curabitur dapibus eu dui id efficitur. Sed posuere eget leo a varius.",
+    para2:"Curabitur bibendum placerat nisl, ac aliquam nisl mollis id. Sed dapibus fringilla arcu. Nullam quis arcu dictum sem commodo finibus. Donec sollicitudin efficitur lorem congue fringilla. Vestibulum egestas elit in ipsum suscipit, a congue velit mattis. Curabitur efficitur, tellus ac posuere egestas, justo ligula pellentesque nibh, eu pharetra lectus sapien ac est. Fusce aliquet vehicula ligula eget congue. Ut finibus purus mauris, non facilisis enim vehicula sit amet.",
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
