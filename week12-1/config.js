@@ -1,31 +1,30 @@
 var config = {
-    style:  'mapbox://styles/iamwfx/cjjx6bl926vgt2ss0l9dbpmxz',
-    accessToken: 'UPDATE-WITH-YOUR-TOKEN',
+    style: 'mapbox://styles/xinyi999/cm2xi51sw00i001pa9zl4a4k1',
+    accessToken: 'pk.eyJ1IjoieGlueWk5OTkiLCJhIjoiY20xc243OXBiMDgxbDJscHVldHF6dnFpcSJ9.EO37NGlWaFpO-c4FDBBVIg',
     showMarkers: true,
     markerColor: '#3FB1CE',
-    //projection: 'equirectangular',
+    projection: 'equirectangular',
     //Read more about available projections here
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/
     inset: true,
     theme: 'dark',
     use3dTerrain: false, //set true for enabling 3D maps.
-    title: 'The Title Text of this Story',
-    subtitle: 'A descriptive and interesting subtitle to draw in the reader',
-    byline: 'By a Digital Storyteller',
+    title: 'Public and Afordable Hosing Flood Risk',
+    subtitle: 'Where and who will be affected by the intensfying climate change?',
+    byline: 'By Xinyi Ling',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
-            id: 'first-chapter',
+            id: 'slug-style-id',
             alignment: 'left',
             hidden: false,
-            title: 'Display Title',
-            image: 'images/source.png',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            title: '',
+            description: 'In the fall of 2012, New York City was hit with hurricane that left tens of thousands of public housing residents New York City Housing Authority public housing developments were affected. 24,000 government-subsidized apartments and 40,000 rent-stabilized apartments were also affected. With rising sea levels from climate change and the of more flooding, which areas and <i>who</i> will likely be most affected? How is affordable housing construction responding to this?',
             location: {
-                center: [-122.418398, 37.759483],
-                zoom: 8.5,
-                pitch: 60,
-                bearing: 0
+                center: [-73.98684, 40.72527],
+                zoom: 11.91,
+                pitch: 38.00,
+                bearing: 13.60
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -45,17 +44,17 @@ var config = {
             ]
         },
         {
-            id: 'second-chapter',
+            id: 'second-identifier',
             alignment: 'right',
             hidden: false,
-            title: 'Second Title',
-            image: 'images/source.png',
-            description: 'Copy these sections to add to your story.',
+            title: 'Red Hook Houses',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/RH_Houses_East_Lorraine_eve_jeh.jpg/440px-RH_Houses_East_Lorraine_eve_jeh.jpg',
+            description: 'The Red Hook Houses are two connected public housing complexes located in Red Hook, Brooklyn, New York City. Managed by the New York City Housing Authority (NYCHA), they comprise the largest housing development in Brooklyn.',
             location: {
-                center: [-77.020636, 38.886900],
-                zoom: 8.5,
-                pitch: 60,
-                bearing: -43.2,
+                center: [-74.00466, 40.67483],
+                zoom: 17.04,
+                pitch: 59.00,
+                bearing: 21.60
                 // flyTo additional controls-
                 // These options control the flight curve, making it move
                 // slowly and zoom out almost completely before starting
@@ -69,31 +68,6 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-        {
-            id: 'third-chapter',
-            alignment: 'left',
-            hidden: false,
-            title: 'Third Title',
-            image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
-            location: {
-              center: [-73.97615, 40.71901],
-              zoom: 15.84,
-              pitch: 56,
-              bearing: 260.44,
-              speed: .5, // make the flying slow
-              curve: 1, // change the speed at which it zooms out
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                {
-                    layer: 'housing',
-                    opacity: 0,
-                    duration: 10
-                }],
-            onChapterExit: []
-        }
+
     ]
 };
