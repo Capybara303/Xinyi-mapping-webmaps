@@ -1,4 +1,4 @@
-mapboxgl.accessToken = "pk.eyJ1IjoieGlueWk5OTkiLCJhIjoiY20xc243OXBiMDgxbDJscHVldHF6dnFpcSJ9.EO37NGlWaFpO-c4FDBBVIg",
+mapboxgl.accessToken = "pk.eyJ1IjoieGlueWk5OTkiLCJhIjoiY20xc243OXBiMDgxbDJscHVldHF6dnFpcSJ9.EO37NGlWaFpO-c4FDBBVIg";
 
 const map = new mapboxgl.Map({
 	container: "Xinyi",
@@ -8,5 +8,28 @@ const map = new mapboxgl.Map({
     pitch: 30,
     bearing: 0,
 	minZoom:9
+
+});
+
+map.on('load', function () {
+	// MORE CODE WILL GO INSIDE HERE
+    map.addSource('restraurantSource', {
+        'type':'vector',
+        'url': 'mapbox://xinyi999.bpfo4njo'
+
+    });
+    
+    map.addLayer({
+        "id":"restraurantLayer",
+        "source": "restraurantSource",
+        "source-layer": "Historical_Restaurant_Inspect-08mv8t",
+        "type": "circle",
+        "paint": {
+        "circle-color": "#008F8C"
+        }
+
+    });
+
+
 
 })
