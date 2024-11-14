@@ -63,8 +63,28 @@
             padding-bottom: 60vh;
         }
         #header p{
-            font-size: 2vh;
+            font-size: 1.2vh;
+            text-align: justify;
+            margin-left: 34vw;
+            margin-right: 34vw;
             color: black;
+        }
+
+        #interlude {
+            width: 100vw;
+        }
+        #interlude p{
+            font-size: 1.2vh;
+            text-align: justify;
+            margin-left: 34vw;
+            margin-right: 34vw;
+            background-color: : white;
+        }
+
+        video {
+            margin-left: 45vw;
+            width:32%;
+            transform: translate(-50%);
         }
 
         #footer {
