@@ -35,7 +35,6 @@ body {
 
 
 
-/* 图例部分的样式 */
 #legend {
   margin-left: 3%;
   margin-right: 3%;
@@ -53,5 +52,5 @@ body {
   height: 20px;
   display: inline-block;
   margin-right: 10px;
-  border-radius: 3px;  /* 圆角效果，让图例更好看 */
+  border-radius: 3px;  
 }
