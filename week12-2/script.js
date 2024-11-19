@@ -20,16 +20,32 @@ map.on('load', function () {
     });
     
     map.addLayer({
-        "id":"restraurantLayer",
+        "id":"restaurantLayer",
         "source": "restraurantSource",
         "source-layer": "Historical_Restaurant_Inspect-08mv8t",
         "type": "circle",
         "paint": {
-        "circle-color": "#008F8C"
+                'circle-opacity': 0.3,
+                'circle-color':
+                ['step',
+                    ['to-number', ['get', 'inspection_score']],
+                    '#aaaaaa',  
+                    45, '#440154',  // (45 - 80)
+                    80, '#3b528b',  // (80 - 85)
+                    85, '#21908d',  // (85 - 90)
+                    90, '#5dc963',  // (90 - 95)
+                    95, '#fde725'   // (95 - 100)
+                    ]
         }
 
     });
 
+console.log('My name is YOUR-NAME');
+map.on('mouseenter', 'restaurantLayer', (e) => {
+        var name = e.features[0]['properties']['business_name'];
+        var textField = document.getElementById('restText');
+        textField.innerHTML = name;
+    });     
 
 
 })
