@@ -49,7 +49,7 @@
            margin: 0;
            padding: 2vh 2vw;
            text-align: center;
-           background-color: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
+           background-color: rgba(255, 255, 255, 0.4); /* 半透明白色背景 */
            border-radius: 5px; /* 圆角效果，可选 */
         }
 
