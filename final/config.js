@@ -1,7 +1,7 @@
 var config = {
-    style: 'mapbox://styles/xinyi999/cm47ib7vd01an01rw7ey44scm',
+    style: 'mapbox://styles/xinyi999/cm2xi51sw00i001pa9zl4a4k1',
     accessToken: 'pk.eyJ1IjoieGlueWk5OTkiLCJhIjoiY20xc243OXBiMDgxbDJscHVldHF6dnFpcSJ9.EO37NGlWaFpO-c4FDBBVIg',
-    showMarkers: true,
+    showMarkers: false,
     markerColor: '#3FB1CE',
     projection: 'equirectangular',
     //Read more about available projections here
