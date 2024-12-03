@@ -42,7 +42,7 @@
           background-position: top;
           background-repeat: no-repeat;
           background-size: 100vw 100vh;
-          height: 170vh;
+          height: 150vh;
         }
 
         #header h1, #header h2, #header p {
@@ -63,7 +63,7 @@
         #header h2{
             font-size: 4vh;
             color: #613B40;
-            padding-bottom: 60vh;
+            padding-bottom: 54vh;
             text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /* 添加白色边框效果 */
         }
 
@@ -72,21 +72,11 @@
         #header p{
             font-size: 1.7vh;
             text-align: justify;
-            margin-left: 34vw;
-            margin-right: 34vw;
+            margin-left: 30vw;
+            margin-right: 30vw;
             color: black;
         }
 
-        #interlude {
-            width: 100vw;
-        }
-        #interlude p{
-            font-size: 1.2vh;
-            text-align: justify;
-            margin-left: 34vw;
-            margin-right: 34vw;
-            background-color: : white;
-        }
 
         video {
             margin-left: 45vw;
@@ -106,8 +96,8 @@
             z-index: 5;
         }
         #features {
-            padding-top: 10vh;
-            padding-bottom: 10vh;
+            padding-top: 25vh;
+            padding-bottom: 30vh;
         }
         .hidden {
             visibility: hidden;
@@ -148,7 +138,7 @@
         .step div {
             padding:  25px 50px;
             line-height: 25px;
-            font-size: 13px;
+            font-size: 15px;
         }
 
         .step img {
